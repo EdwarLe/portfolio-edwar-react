@@ -9,7 +9,7 @@ function App() {
 
   return (
     <main className="bg-[url(/bgPortfolio.webp)] bg-cover bg-fixed bg-center min-h-screen w-full  font-montserrat text-white overflow-hidden">
-      <div className="bg-slate-950/90">
+      <div className="bg-purple-950/90">
         <section className="bg-transparent fixed w-full h-[88px] backdrop-blur-xl z-20">
       <Header setMenuSlider={setMenuSlider} menuSlider={menuSlider} />
       </section>
