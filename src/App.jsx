@@ -1,19 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/Header'
-import MainPage from './components/MainPage'
+import { useState } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import MainPage from "./components/MainPage";
+import Menu from "./components/Menu";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [menuSlider, setMenuSlider] = useState(false);
 
   return (
-    <main className='bg-red-600 min-h-screen w-full'>
-      <Header />
+    <main className="bg-red-600 min-h-screen w-full overflow-hidden font-montserrat text-white">
+      <Header setMenuSlider={setMenuSlider} menuSlider={menuSlider} />
+      <Menu menuSlider={menuSlider} />
       <MainPage />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
