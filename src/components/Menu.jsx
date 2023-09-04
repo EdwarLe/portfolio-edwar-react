@@ -1,8 +1,8 @@
 const Menu = ({menuSlider}) => {
   return (
     <section
-        className={` backdrop-blur-xl fixed min-h-[calc(100vh_-_88px)] bottom-0 transition-all w-full ${
-          menuSlider ? "left-0" : "-translate-x-full z-10"
+        className={` backdrop-blur-xl fixed min-h-[calc(100vh_-_88px)] bottom-0 transition-all w-full z-20 ${
+          menuSlider ? "left-0" : "-translate-x-full"
         }`}
       >
         <ul className="grid grid-cols-3">
