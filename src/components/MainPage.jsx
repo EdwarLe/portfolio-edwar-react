@@ -6,7 +6,7 @@ import Skills from "./Skills"
 
 const MainPage = () => {
   return (
-    <main className="w-[min(100%,_1024px)] bg-blue-300 mx-auto">
+    <main className="w-[min(100%,_1024px)] mx-auto">
         <Home />
         <Skills />
         <Projects />

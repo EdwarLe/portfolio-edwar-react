@@ -7,7 +7,7 @@ const Header = ({menuSlider, setMenuSlider}) => {
     setMenuSlider(!menuSlider);
   };
   return (
-    <nav className="bg-indigo-950 h-[88px] flex w-[min(100%,_1024px)] right-1/2 translate-x-1/2 justify-between p-4 fixed items-center">
+    <nav className="h-full flex w-[min(100%,_1024px)] mx-auto justify-between p-4 items-center">
       <section className="flex gap-2 items-center">
         <div className="w-12">
           <LogoSvg />

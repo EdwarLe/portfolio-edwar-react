@@ -7,8 +7,8 @@ const ContactMe = () => {
         <input type="text" id="name" name="name"/>
         </div>
         <div>
-        <label htmlFor="name">NAME</label>
-        <input type="text" id="name" name="name"/>
+        <label htmlFor="email">NAME</label>
+        <input type="email" id="email" name="email"/>
         </div>
         <div>
           <textarea className="resize-none" name="msg" id="msg" cols="30" rows="10"></textarea>
