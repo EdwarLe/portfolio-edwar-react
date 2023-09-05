@@ -1,4 +1,4 @@
-const Home = () => {
+const Home = ({handleCloseContactForm}) => {
   return (
     <main className="border-b border-b-slate-700 w-full min-h-screen p-3 flex justify-center">
         <section className="flex flex-col gap-4 justify-center">
@@ -8,7 +8,7 @@ const Home = () => {
             </article>
             <section className="flex gap-6">
                 <button className="bg-emerald-600 text-slate-950 font-semibold p-2 px-4">Projects</button>
-                <button className="bg-emerald-600 text-slate-950 font-semibold p-2 px-4">Contact</button>
+                <button onClick={handleCloseContactForm} className="bg-emerald-600 text-slate-950 font-semibold p-2 px-4">Contact</button>
             </section>
         </section>
     </main>
