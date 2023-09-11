@@ -1,11 +1,7 @@
 import HamburguerMenu from "./HamburguerMenu";
 import LogoSvg from "./LogoSvg";
 
-const Header = ({menuSlider, setMenuSlider}) => {
-
-  const handleMenuSlider = () => {
-    setMenuSlider(!menuSlider);
-  };
+const Header = ({handleMenuSlider}) => {
   return (
     <nav className="h-full flex w-[min(100%,_1024px)] mx-auto justify-between p-4 items-center">
       <section className="flex gap-2 items-center">

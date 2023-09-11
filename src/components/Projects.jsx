@@ -2,7 +2,7 @@ import ProjectUnit from "./ProjectUnit";
 
 const Projects = () => {
   return (
-    <section className="min-h-screen p-3 grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-4">
+    <section className="min-h-screen p-3 grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-4" id="projects">
       <ProjectUnit
         title={"Pokedex"}
         img={"bg-[url(/pokedexApi.jpg)]"}

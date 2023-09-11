@@ -5,14 +5,10 @@ import Home from "./Home"
 import Projects from "./Projects"
 import Skills from "./Skills"
 
-const MainPage = () => {
-  const [isContactModal, setIsContactModal] = useState(false)
+const MainPage = ({handleCloseContactForm, isContactModal}) => {
+  
 
-  const handleCloseContactForm = () => {
-    setIsContactModal(!isContactModal)
-  }
 
-  console.log(isContactModal)
   return (
     <main className="w-[min(100%,_1024px)] mx-auto relative">
         <Home handleCloseContactForm={handleCloseContactForm}/>

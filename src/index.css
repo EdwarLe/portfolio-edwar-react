@@ -3,3 +3,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+}
+
+html::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #3b0764;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #16a34a;
+    border-radius: 4rem;
+}
