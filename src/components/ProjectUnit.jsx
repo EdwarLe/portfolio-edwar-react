@@ -15,7 +15,7 @@ const ProjectUnit = ({
     <article className="bg-zinc-900 grid place-items-center gap-4 p-2">
       <h3 className="uppercase font-semibold">{title}</h3>
       <div
-        className={`h-56 ${img} bg-cover w-11/12 bg-[center_bottom] border-2 border-green-600 dark:border-red-600 transition-all relative overflow-hidden group`}
+        className={`h-56 ${img} bg-cover w-11/12 bg-[center_bottom] border-2 border-green-600 dark:border-red-600 transition-all relative overflow-hidden group cursor-pointer`}
       >
         <section className="bg-black/70 h-full translate-y-full absolute w-full group-hover:translate-y-0 transition-transform duration-300">
           <article className="flex flex-col gap-2 justify-around items-center h-full w-full">
