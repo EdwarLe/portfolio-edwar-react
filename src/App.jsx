@@ -10,7 +10,7 @@ function App() {
   const [isContactModal, setIsContactModal] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(null);
 
-  console.log(isDarkMode)
+  console.log(isDarkMode);
 
   const handleMenuSlider = () => {
     setMenuSlider(!menuSlider);
@@ -24,22 +24,22 @@ function App() {
     setIsDarkMode(isDarkMode === "dark" ? "" : "dark");
   };
 
-
-  useEffect(() => {
-   const darkInLocal = localStorage.getItem("dark")
-   darkInLocal ? setIsDarkMode('dark') : setIsDarkMode(null)
-  }, [])
-  
-  
   useEffect(() => {
     const darkInLocal = localStorage.getItem("dark");
-    if(darkInLocal) {
-      localStorage.removeItem('dark')
-      document.documentElement.classList.remove('dark')
+    darkInLocal === "false" ? setIsDarkMode("false") : setIsDarkMode(null);
+  }, []);
+
+  useEffect(() => {
+    const darkInLocal = localStorage.getItem("dark", "true");
+    console.log(darkInLocal);
+    if (darkInLocal === "true") {
+      localStorage.setItem("dark", "false");
+      document.documentElement.classList.remove("dark");
+      console.log("Entro en true");
     } else {
-      localStorage.setItem('dark', true)
-      document.documentElement.classList.add('dark')
-      setIsDarkMode('dark')
+      localStorage.setItem("dark", "true");
+      document.documentElement.classList.add("dark");
+      console.log("Entro en false");
     }
   }, [isDarkMode]);
 
@@ -66,7 +66,9 @@ function App() {
           handleCloseContactForm={handleCloseContactForm}
           isContactModal={isContactModal}
         />
-        <Social />
+        <section className="fixed top-[95px]">
+          <Social />
+        </section>
       </div>
     </main>
   );

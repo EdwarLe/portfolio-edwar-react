@@ -1,6 +1,6 @@
 const Social = () => {
   return (
-    <article className="fixed top-[95px] text-3xl flex flex-col gap-4">
+    <article className="text-3xl flex flex-col gap-4">
       <a
         href="https://www.linkedin.com/in/edwar-leon-54093964/"
         target="_blank"

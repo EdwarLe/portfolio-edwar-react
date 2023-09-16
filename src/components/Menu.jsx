@@ -1,6 +1,12 @@
 import MenuDarkLanguage from "./MenuDarkLanguage";
+import Social from "./Social";
 
-const Menu = ({ handleMenuSlider, handleCloseContactForm, menuSlider, handleDarkMode }) => {
+const Menu = ({
+  handleMenuSlider,
+  handleCloseContactForm,
+  menuSlider,
+  handleDarkMode,
+}) => {
   return (
     <section
       className={`backdrop-blur-xl fixed min-h-[calc(100vh_-_88px)] bottom-0 transition-all w-full z-20 grid place-items-center sm:w-1/2 duration-500 ${
@@ -12,10 +18,10 @@ const Menu = ({ handleMenuSlider, handleCloseContactForm, menuSlider, handleDark
       </section>
       <ul className="flex flex-col justify-center items-center gap-4 h-full font-bold text-2xl">
         <li onClick={handleMenuSlider}>
-          <a href="#home">Home</a>
+          <a className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-purple-600 dark:hover:border-b-white transition-all" href="#home">Home</a>
         </li>
         <li onClick={handleMenuSlider}>
-          <a href="#projects">Projects</a>
+          <a className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-purple-600 dark:hover:border-b-white transition-all" href="#projects">Projects</a>
         </li>
         <li
           onClick={() => {
@@ -23,9 +29,12 @@ const Menu = ({ handleMenuSlider, handleCloseContactForm, menuSlider, handleDark
             handleMenuSlider();
           }}
         >
-          <button>Contact Me</button>
+          <button className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-purple-600 dark:hover:border-b-white transition-all">Contact Me</button>
         </li>
       </ul>
+      <section className="absolute bottom-3 w-full">
+        <Social />
+      </section>
     </section>
   );
 };
