@@ -6,6 +6,7 @@ const Menu = ({
   handleCloseContactForm,
   menuSlider,
   handleDarkMode,
+  isDarkMode
 }) => {
   return (
     <section
@@ -14,7 +15,7 @@ const Menu = ({
       }`}
     >
       <section className=" flex min-[500px]:hidden absolute top-0 left-0 w-full p-4">
-        <MenuDarkLanguage handleDarkMode={handleDarkMode} />
+        <MenuDarkLanguage handleDarkMode={handleDarkMode} isDarkMode={isDarkMode} />
       </section>
       <ul className="flex flex-col justify-center items-center gap-4 h-full font-bold text-2xl">
         <li onClick={handleMenuSlider}>

@@ -2,7 +2,7 @@ import HamburguerMenu from "./HamburguerMenu";
 import LogoSvg from "./LogoSvg";
 import MenuDarkLanguage from "./MenuDarkLanguage";
 
-const Header = ({ handleMenuSlider, handleDarkMode, isDarkMode }) => {
+const Header = ({ handleMenuSlider, handleDarkMode, isDarkMode, menuSlider }) => {
   return (
     <nav className="h-full flex w-[min(100%,_1024px)] mx-auto justify-between p-4 items-center">
       <section className="flex gap-2 items-center">
@@ -19,7 +19,7 @@ const Header = ({ handleMenuSlider, handleDarkMode, isDarkMode }) => {
       <section className="hidden min-[500px]:flex">
         <MenuDarkLanguage handleDarkMode={handleDarkMode} />
       </section>
-      <HamburguerMenu handleMenuSlider={handleMenuSlider} />
+      <HamburguerMenu handleMenuSlider={handleMenuSlider} menuSlider={menuSlider} />
     </nav>
   );
 };
