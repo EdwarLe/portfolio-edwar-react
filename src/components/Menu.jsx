@@ -6,7 +6,9 @@ const Menu = ({
   handleCloseContactForm,
   menuSlider,
   handleDarkMode,
-  isDarkMode
+  isDarkMode,
+  t,
+  handleChangeLanguage,
 }) => {
   return (
     <section
@@ -14,15 +16,33 @@ const Menu = ({
         menuSlider ? "left-0" : "-translate-x-full"
       }`}
     >
-      <section className=" flex min-[500px]:hidden absolute top-0 left-0 w-full p-4">
-        <MenuDarkLanguage handleDarkMode={handleDarkMode} isDarkMode={isDarkMode} />
-      </section>
+      {/* <section className=" flex min-[500px]:hidden absolute top-0 left-0 w-full p-4">
+        <MenuDarkLanguage
+          handleDarkMode={handleDarkMode}
+          isDarkMode={isDarkMode}
+          handleChangeLanguage={handleChangeLanguage}
+          t={t}
+          idLng={"menuLng"}
+          forLng={"menuFor"}
+
+        />
+      </section> */}
       <ul className="flex flex-col justify-center items-center gap-4 h-full font-bold text-2xl">
         <li onClick={handleMenuSlider}>
-          <a className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-purple-600 dark:hover:border-b-white transition-all" href="#home">Home</a>
+          <a
+            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-purple-600 dark:hover:border-b-white transition-all"
+            href="#home"
+          >
+            {t("eng.home")}
+          </a>
         </li>
         <li onClick={handleMenuSlider}>
-          <a className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-purple-600 dark:hover:border-b-white transition-all" href="#projects">Projects</a>
+          <a
+            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-purple-600 dark:hover:border-b-white transition-all"
+            href="#projects"
+          >
+            {t("eng.projects")}
+          </a>
         </li>
         <li
           onClick={() => {
@@ -30,10 +50,12 @@ const Menu = ({
             handleMenuSlider();
           }}
         >
-          <button className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-purple-600 dark:hover:border-b-white transition-all">Contact Me</button>
+          <button className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-purple-600 dark:hover:border-b-white transition-all">
+            {t("eng.contact")}
+          </button>
         </li>
       </ul>
-      <section className="absolute bottom-3 w-full">
+      <section className="absolute top-[95px] left-0">
         <Social />
       </section>
     </section>

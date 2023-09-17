@@ -1,8 +1,9 @@
 import ProjectUnit from "./ProjectUnit";
 
-const Projects = () => {
+const Projects = ({t}) => {
   return (
-    <section className="min-h-screen p-3 grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-4 " id="projects">
+    <section className="min-h-screen p-3 grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-4  " id="projects">
+      <h2 className="col-span-3 text-3xl place-self-center p-8">{t("eng.titleProjects")}</h2>
       <ProjectUnit
         title={"Pokedex"}
         img={"bg-[url(/pokedexApi.jpg)]"}
