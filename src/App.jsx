@@ -9,12 +9,13 @@ import { useTranslation } from "react-i18next";
 function App() {
   const [menuSlider, setMenuSlider] = useState(false);
   const [isContactModal, setIsContactModal] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(null);
-  const {t, i18n} = useTranslation()
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { t, i18n } = useTranslation();
+
 
   const handleChangeLanguage = () => {
-    i18n.changeLanguage(i18n.language === "en" ? "es" : "en")
-  }
+    i18n.changeLanguage(i18n.language === "en" ? "es" : "en");
+  };
 
   const handleMenuSlider = () => {
     setMenuSlider(!menuSlider);
@@ -25,12 +26,18 @@ function App() {
   };
 
   const handleDarkMode = () => {
-    setIsDarkMode(isDarkMode === "dark" ? "" : "dark");
+    setIsDarkMode(!isDarkMode);
   };
+
+  const handleBtnOnTop = () => {
+    window.scrollTo(0,0)
+  }
+
+
 
   useEffect(() => {
     const darkInLocal = localStorage.getItem("dark");
-    darkInLocal === "false" ? setIsDarkMode("false") : setIsDarkMode(null);
+    darkInLocal === "false" ? setIsDarkMode(false) : setIsDarkMode(true);
   }, []);
 
   useEffect(() => {
@@ -55,7 +62,8 @@ function App() {
             handleMenuSlider={handleMenuSlider}
             handleDarkMode={handleDarkMode}
             isDarkMode={isDarkMode}
-            handleChangeLanguage={handleChangeLanguage} t={t}
+            handleChangeLanguage={handleChangeLanguage}
+            t={t}
           />
         </section>
         <Menu
@@ -63,15 +71,20 @@ function App() {
           handleCloseContactForm={handleCloseContactForm}
           handleMenuSlider={handleMenuSlider}
           handleDarkMode={handleDarkMode}
-          isDarkMode={isDarkMode} t={t}
+          isDarkMode={isDarkMode}
+          t={t}
         />
         <MainPage
           handleCloseContactForm={handleCloseContactForm}
-          isContactModal={isContactModal} t={t}
+          isContactModal={isContactModal}
+          t={t}
         />
         <section className="fixed min-[500px]:top-[95px]">
           <Social />
         </section>
+        <div onClick={handleBtnOnTop} className="fixed bottom-4 right-4 text-3xl cursor-pointer bg-white dark:bg-zinc-900 flex justify-center items-center rounded-full hover:scale-110 transition-all">
+          <i className="bx bxs-caret-up-circle text-green-600 dark:text-red-600"></i>
+        </div>
       </div>
     </main>
   );

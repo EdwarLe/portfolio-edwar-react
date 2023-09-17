@@ -25,9 +25,8 @@ const MenuDarkLanguage = ({
       </div>
       <div
         onClick={handleDarkMode}
-        className={`text-3xl flex items-center cursor-pointer hover:rotate-180 transition-all hover:text-red-600 dark:hover:rotate-0 dark:hover:text-white ${
-          isDarkMode === "dark" ? "rotate-180 text-red-600" : "rotate-0"
-        }`}
+        className={`text-3xl flex items-center cursor-pointer transition-all  ${
+          isDarkMode ? "rotate-180 text-red-600 hover:text-white hover:rotate-0" : "rotate-0 text-white hover:text-red-600 hover:rotate-180"}`}
       >
         <i className="bx bxs-adjust-alt"></i>
       </div>

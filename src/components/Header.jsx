@@ -28,6 +28,7 @@ const Header = ({
       <section className="absolute bottom-0 w-full left-0 min-[500px]:bottom-auto min-[500px]:left-auto min-[500px]:w-auto min-[500px]:relative">
         <MenuDarkLanguage
           handleDarkMode={handleDarkMode}
+          isDarkMode={isDarkMode}
           handleChangeLanguage={handleChangeLanguage}
           t={t}
           idLng={"headerLng"}

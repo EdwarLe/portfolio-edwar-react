@@ -6,6 +6,7 @@ const Fotter = ({ handleCloseContactForm, t }) => {
         <article className="grid">
           <a href="#home" className="capitalize">{t("eng.home")}</a>
           <a href="#projects">{t("eng.projects")}</a>
+          <a href="#skills">{t("eng.skills")}</a>
           <p onClick={handleCloseContactForm} className="cursor-pointer">
             {t("eng.contact")}
           </p>
