@@ -3,7 +3,7 @@ const MenuDarkLanguage = ({
   isDarkMode,
   handleChangeLanguage,
   t,
-  idLng
+  idLng,
 }) => {
   return (
     <section className="flex items-center justify-between p-2 min-[500px]:p-0 gap-4 px-4">
@@ -25,8 +25,7 @@ const MenuDarkLanguage = ({
       </div>
       <div
         onClick={handleDarkMode}
-        className={`text-3xl flex items-center cursor-pointer transition-all  ${
-          isDarkMode ? "rotate-180 text-red-600 hover:text-white hover:rotate-0" : "rotate-0 text-white hover:text-red-600 hover:rotate-180"}`}
+        className={`text-3xl flex items-center cursor-pointer transition-all hover:rotate-180 hover:text-red-600 dark:rotate-180 dark:text-red-600 dark:hover:text-white dark:hover:rotate-0`}
       >
         <i className="bx bxs-adjust-alt"></i>
       </div>

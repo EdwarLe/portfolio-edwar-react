@@ -12,7 +12,7 @@ const ProjectUnit = ({
   skill6,
 }) => {
   return (
-    <article className="bg-zinc-900 grid place-items-center gap-4 p-2">
+    <article className="bg-slate-700 dark:bg-zinc-900 grid place-items-center gap-4 p-2 transition-colors">
       <h3 className="uppercase font-semibold">{title}</h3>
       <div
         className={`h-56 ${img} bg-cover w-11/12 bg-[center_bottom] border-2 border-green-600 dark:border-red-600 transition-all relative overflow-hidden group cursor-pointer`}
@@ -22,14 +22,14 @@ const ProjectUnit = ({
             <p className="p-2">{info}</p>
             <section className="flex gap-2 justify-center items-end">
               <a
-                className="bg-green-600 px-4 mb-6 shadow-xl shadow-slate-950 hover:scale-105 hover:bg-purple-600 transition-all dark:bg-red-600"
+                className="bg-green-600 px-4 mb-6 shadow-xl shadow-slate-950 hover:scale-105 hover:bg-slate-700 transition-all dark:bg-red-600"
                 href={gitHub}
                 target="_blank"
               >
                 GITHUB
               </a>
               <a
-                className="bg-purple-600 px-4 mb-6 shadow-xl shadow-slate-950 hover:scale-105 hover:bg-green-600 transition-transform dark:bg-red-600"
+                className="bg-slate-700 px-4 mb-6 shadow-xl shadow-slate-950 hover:scale-105 hover:bg-green-600 transition-transform dark:bg-red-600"
                 href={demo}
                 target="_blank"
               >

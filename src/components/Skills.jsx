@@ -1,6 +1,9 @@
-const Skills = ({t}) => {
+const Skills = ({ t }) => {
   return (
-    <section className="min-h-screen border-b border-slate-700 flex flex-col justify-center items-center w-full gap-14" id="skills">
+    <section
+      className="min-h-screen border-b border-slate-700 flex flex-col justify-center items-center w-full gap-14"
+      id="skills"
+    >
       <h2 className="text-3xl">{t("eng.titleSkills")}</h2>
       <article className="w-full grid place-items-center relative">
         <div className="rounded-full overflow-hidden w-[min(55%,220px)] grid place-items-center absolute">

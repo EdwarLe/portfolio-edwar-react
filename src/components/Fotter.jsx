@@ -1,10 +1,12 @@
 const Fotter = ({ handleCloseContactForm, t }) => {
   return (
-    <article className="bg-zinc-900 p-3 flex flex-col gap-4 min-[500px]:flex-row min-[500px]:justify-around min-[500px]:text-center">
+    <article className="dark:bg-zinc-900 bg-slate-700 p-3 flex flex-col gap-4 min-[500px]:flex-row min-[500px]:justify-around min-[500px]:text-center transition-colors">
       <section>
         <h3 className="font-semibold">{t("eng.aboutFooter")}</h3>
         <article className="grid">
-          <a href="#home" className="capitalize">{t("eng.home")}</a>
+          <a href="#home" className="capitalize">
+            {t("eng.home")}
+          </a>
           <a href="#projects">{t("eng.projects")}</a>
           <a href="#skills">{t("eng.skills")}</a>
           <p onClick={handleCloseContactForm} className="cursor-pointer">
@@ -18,11 +20,19 @@ const Fotter = ({ handleCloseContactForm, t }) => {
       </section>
       <section className="font-semibold grid gap-2">
         <h3>{t("eng.social")}</h3>
-        <div className="flex gap-4 text-3xl">
-          <a href="https://www.linkedin.com/in/edwar-leon-54093964/" target="_blank" className="hover:scale-105 transition-all hover:text-purple-600 dark:hover:text-red-600">
+        <div className="flex gap-4 text-4xl">
+          <a
+            href="https://www.linkedin.com/in/edwar-leon-54093964/"
+            target="_blank"
+            className="hover:scale-105 transition-all hover:text-green-600 dark:hover:text-red-600"
+          >
             <i className="bx bxl-linkedin-square"></i>
           </a>
-          <a href="https://github.com/EdwarLe" target="_blank" className="hover:scale-105 transition-all hover:text-purple-600 dark:hover:text-red-600">
+          <a
+            href="https://github.com/EdwarLe"
+            target="_blank"
+            className="hover:scale-105 transition-all hover:text-green-600 dark:hover:text-red-600"
+          >
             <i className="bx bxl-github"></i>
           </a>
         </div>

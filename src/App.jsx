@@ -12,7 +12,6 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const { t, i18n } = useTranslation();
 
-
   const handleChangeLanguage = () => {
     i18n.changeLanguage(i18n.language === "en" ? "es" : "en");
   };
@@ -30,10 +29,8 @@ function App() {
   };
 
   const handleBtnOnTop = () => {
-    window.scrollTo(0,0)
-  }
-
-
+    window.scrollTo(0, 0);
+  };
 
   useEffect(() => {
     const darkInLocal = localStorage.getItem("dark");
@@ -41,7 +38,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const darkInLocal = localStorage.getItem("dark", "true");
+    const darkInLocal = localStorage.getItem("dark");
     if (darkInLocal === "true") {
       localStorage.setItem("dark", "false");
       document.documentElement.classList.remove("dark");
@@ -53,8 +50,8 @@ function App() {
 
   return (
     <main className="bg-[url(/bgPortfolio.webp)] bg-cover bg-fixed bg-center min-h-screen w-full  font-montserrat text-white overflow-hidden relative">
-      <div className="bg-purple-950/90 dark:bg-black/80 transition-colors">
-        <section className="bg-transparent fixed w-full h-[140px] backdrop-blur-xl z-20 min-[500px]:h-[88px] py-2">
+      <div className="bg-slate-950/90 dark:bg-black/80 transition-colors">
+        <section className="bg-transparent fixed w-full h-[140px] backdrop-blur-xl z-50 min-[500px]:h-[88px] py-2">
           <Header
             setMenuSlider={setMenuSlider}
             menuSlider={menuSlider}
@@ -82,7 +79,10 @@ function App() {
         <section className="fixed min-[500px]:top-[95px]">
           <Social />
         </section>
-        <div onClick={handleBtnOnTop} className="fixed bottom-4 right-4 text-3xl cursor-pointer bg-white dark:bg-zinc-900 flex justify-center items-center rounded-full hover:scale-110 transition-all">
+        <div
+          onClick={handleBtnOnTop}
+          className="fixed bottom-4 right-4 text-3xl cursor-pointer bg-white dark:bg-zinc-900 flex justify-center items-center rounded-full hover:scale-110 transition-all"
+        >
           <i className="bx bxs-caret-up-circle text-green-600 dark:text-red-600"></i>
         </div>
       </div>

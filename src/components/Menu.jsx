@@ -1,36 +1,16 @@
-import MenuDarkLanguage from "./MenuDarkLanguage";
 import Social from "./Social";
 
-const Menu = ({
-  handleMenuSlider,
-  handleCloseContactForm,
-  menuSlider,
-  handleDarkMode,
-  isDarkMode,
-  t,
-  handleChangeLanguage,
-}) => {
+const Menu = ({ handleMenuSlider, handleCloseContactForm, menuSlider, t }) => {
   return (
     <section
       className={`backdrop-blur-xl fixed min-h-[calc(100vh_-_140px)] min-[500px]:min-h-[calc(100vh_-_88px)] bottom-0 transition-all w-full z-20 grid place-items-center sm:w-1/2 duration-500 ${
         menuSlider ? "left-0" : "-translate-x-full"
       }`}
     >
-      {/* <section className=" flex min-[500px]:hidden absolute top-0 left-0 w-full p-4">
-        <MenuDarkLanguage
-          handleDarkMode={handleDarkMode}
-          isDarkMode={isDarkMode}
-          handleChangeLanguage={handleChangeLanguage}
-          t={t}
-          idLng={"menuLng"}
-          forLng={"menuFor"}
-
-        />
-      </section> */}
       <ul className="flex flex-col justify-center items-center gap-4 h-full font-bold text-2xl">
         <li onClick={handleMenuSlider}>
           <a
-            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-purple-600 dark:hover:border-b-white transition-all"
+            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-white dark:hover:border-b-white transition-all"
             href="#home"
           >
             {t("eng.home")}
@@ -38,7 +18,7 @@ const Menu = ({
         </li>
         <li onClick={handleMenuSlider}>
           <a
-            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-purple-600 dark:hover:border-b-white transition-all"
+            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-white dark:hover:border-b-white transition-all"
             href="#skills"
           >
             {t("eng.skills")}
@@ -46,7 +26,7 @@ const Menu = ({
         </li>
         <li onClick={handleMenuSlider}>
           <a
-            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-purple-600 dark:hover:border-b-white transition-all"
+            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-white dark:hover:border-b-white transition-all"
             href="#projects"
           >
             {t("eng.projects")}
@@ -58,7 +38,7 @@ const Menu = ({
             handleMenuSlider();
           }}
         >
-          <button className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-purple-600 dark:hover:border-b-white transition-all">
+          <button className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-white dark:hover:border-b-white transition-all">
             {t("eng.contact")}
           </button>
         </li>

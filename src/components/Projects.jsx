@@ -6,10 +6,7 @@ const Projects = ({ t }) => {
       <h2 className="text-center text-3xl p-8" id="projects">
         {t("eng.titleProjects")}
       </h2>
-      <section
-        className="min-h-screen p-3 grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-4  "
-        
-      >
+      <section className="min-h-screen p-3 grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-4 mb-8">
         <ProjectUnit
           title={"Pokedex"}
           img={"bg-[url(/pokedexApi.jpg)]"}
