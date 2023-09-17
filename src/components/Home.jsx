@@ -11,14 +11,14 @@ const Home = ({ handleCloseContactForm, t }) => {
         </article>
         <section className="flex gap-6 text-white">
           <a
-            className="bg-green-600  font-semibold p-2 px-4 hover:bg-purple-600 hover:scale-105 transition-all dark:bg-red-600"
+            className="bg-green-600 font-semibold p-2 px-4 hover:bg-slate-700 hover:scale-105 transition-all dark:bg-red-600"
             href="#projects"
           >
             {t("eng.projects")}
           </a>
           <button
             onClick={handleCloseContactForm}
-            className="bg-green-600 font-semibold p-2 px-4 hover:bg-purple-600 hover:scale-105 transition-all dark:bg-red-600"
+            className="bg-green-600 font-semibold p-2 px-4 hover:bg-slate-700 hover:scale-105 transition-all dark:bg-red-600"
           >
             {t("eng.contact")}
           </button>
