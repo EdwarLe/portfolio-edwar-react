@@ -41,7 +41,7 @@ const Projects = ({ t }) => {
           title={"Rick and Morty App"}
           img={"bg-[url(/rickAndMortyApp.jpg)]"}
           gitHub={"https://github.com/EdwarLe/rickAndMortyApi"}
-          demo={"https://previsualicer-rick-and-morty-api.netlify.app/"}
+          demo={"https://rick-and-morty-api-e.netlify.app/"}
           info={
             "Search every dimension in this web app and look all their characters, do you wanna know if there is alive?, you are in the right place."
           }
