@@ -75,6 +75,7 @@ function App() {
           handleCloseContactForm={handleCloseContactForm}
           isContactModal={isContactModal}
           t={t}
+          language={i18n}
         />
         <section className="fixed min-[500px]:top-[95px]">
           <Social />

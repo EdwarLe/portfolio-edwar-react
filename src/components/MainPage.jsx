@@ -5,10 +5,10 @@ import Home from "./Home";
 import Projects from "./Projects";
 import Skills from "./Skills";
 
-const MainPage = ({ handleCloseContactForm, isContactModal, t }) => {
+const MainPage = ({ handleCloseContactForm, isContactModal, t, language }) => {
   return (
     <main className="w-[min(100%,_1024px)] mx-auto relative">
-      <Home handleCloseContactForm={handleCloseContactForm} t={t} />
+      <Home handleCloseContactForm={handleCloseContactForm} t={t} language={language} />
       <Skills t={t} />
       <Projects t={t} />
       <ContactMe

@@ -16,10 +16,10 @@ const MenuDarkLanguage = ({
           id={idLng}
         >
           <option className="bg-black/60" value="es">
-            EN
+          🇺🇸
           </option>
           <option className="bg-black/60" value="en">
-            ES
+          🇪🇸
           </option>
         </select>
       </div>
