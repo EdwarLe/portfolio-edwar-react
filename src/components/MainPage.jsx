@@ -16,7 +16,7 @@ const MainPage = ({ handleCloseContactForm, isContactModal, t, language }) => {
         isContactModal={isContactModal}
         t={t}
       />
-      <Fotter handleCloseContactForm={handleCloseContactForm} t={t} />
+      <Fotter handleCloseContactForm={handleCloseContactForm} t={t} language={language}/>
     </main>
   );
 };

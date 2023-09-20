@@ -1,4 +1,4 @@
-const Fotter = ({ handleCloseContactForm, t }) => {
+const Fotter = ({ handleCloseContactForm, t, language }) => {
   return (
     <article className="dark:bg-zinc-900 bg-slate-700 p-3 flex flex-col gap-4 min-[500px]:flex-row min-[500px]:justify-around min-[500px]:text-center transition-colors">
       <section>
@@ -12,6 +12,11 @@ const Fotter = ({ handleCloseContactForm, t }) => {
           <p onClick={handleCloseContactForm} className="cursor-pointer">
             {t("eng.contact")}
           </p>
+          <a
+            href={language?.language === "es" ? "/front-end_edwar-leon_HF.pdf" : "/front-end_edwar-leon_HF_EN.pdf"} download
+          >
+            {t("eng.cv")}
+          </a>
         </article>
       </section>
       <section>
