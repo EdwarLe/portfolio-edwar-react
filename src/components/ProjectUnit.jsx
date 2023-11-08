@@ -12,7 +12,7 @@ const ProjectUnit = ({
   skill6,
 }) => {
   return (
-    <article className="bg-slate-700 dark:bg-zinc-900 grid place-items-center gap-4 p-2 transition-colors">
+    <article className="bg-slate-950 dark:bg-zinc-900 grid place-items-center gap-4 p-2 transition-colors text-white">
       <h3 className="uppercase font-semibold">{title}</h3>
       <div
         className={`h-56 ${img} bg-cover w-11/12 bg-[center_bottom] border-2 border-green-600 dark:border-red-600 transition-all relative overflow-hidden group cursor-pointer`}

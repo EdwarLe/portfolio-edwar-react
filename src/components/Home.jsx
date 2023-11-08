@@ -11,19 +11,19 @@ const Home = ({ handleCloseContactForm, t, language }) => {
         </article>
         <section className="flex gap-6 text-white text-center flex-wrap">
           <a
-            className="bg-green-600 font-semibold p-2 px-4 hover:bg-slate-700 hover:scale-105 transition-all dark:bg-red-600 flex items-center"
+            className="bg-slate-950 font-semibold p-2 px-4 hover:bg-green-600 hover:text-slate-950 hover:scale-105 transition-all dark:bg-red-600 flex items-center"
             href="#projects"
           >
             {t("eng.projects")}
           </a>
           <button
             onClick={handleCloseContactForm}
-            className="bg-green-600 font-semibold p-2 px-4 hover:bg-slate-700 hover:scale-105 transition-all dark:bg-red-600 flex items-center"
+            className="bg-slate-950 font-semibold p-2 px-4 hover:bg-green-600 hover:text-slate-950 hover:scale-105 transition-all dark:bg-red-600 flex items-center"
           >
             {t("eng.contact")}
           </button>
           <a
-            className="bg-green-600 font-semibold p-2 px-4 hover:bg-slate-700 hover:scale-105 transition-all dark:bg-red-600 flex items-center"
+            className="bg-slate-950 font-semibold p-2 px-4 hover:bg-green-600 hover:text-slate-950 hover:scale-105 transition-all dark:bg-red-600 flex items-center"
             href={language?.language === "es" ? "/front-end_edwar-leon_HF.pdf" : "/front-end_edwar-leon_HF_EN.pdf"} download
           >
             {t("eng.cv")}

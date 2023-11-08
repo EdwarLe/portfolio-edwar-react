@@ -9,7 +9,7 @@ const Skills = ({ t }) => {
         <div className="rounded-full overflow-hidden w-[min(55%,220px)] grid place-items-center absolute">
           <img src="/Profile2.jpg" alt="" />
         </div>
-        <section className=" w-[min(95%,380px)] aspect-square relative text-green-600 dark:text-red-600 transition-colors">
+        <section className=" w-[min(95%,380px)] aspect-square relative text-slate-950 dark:text-red-600 transition-colors">
           <div className="h-full rounded-full aspect-square absolute animate-[spin_linear_infinite_20s]">
             <div className="absolute left-1/2 -translate-x-1/2 origin-[50%_min(300%,220px)] h-1/6 aspect-square">
               <i className="bx bxl-html5 text-[min(15vw,_68px)]"></i>

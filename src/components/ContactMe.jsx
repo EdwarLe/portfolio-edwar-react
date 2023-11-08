@@ -28,7 +28,7 @@ const ContactMe = ({ handleCloseContactForm, isContactModal, t }) => {
         isContactModal ? "scale-100" : "scale-0"
       } transition-transform z-20`}
     >
-      <section className="bg-slate-700 dark:bg-zinc-900 w-[min(100%,_700px)] flex justify-center flex-col items-center gap-2 p-4 relative">
+      <section className="bg-slate-950 dark:bg-zinc-900 w-[min(100%,_700px)] flex justify-center flex-col items-center gap-2 p-4 relative text-white">
         <span className="absolute top-2 right-2" onClick={handleCloseContactForm}>
           <i className="bx bx-x hover:rotate-180 cursor-pointer text-3xl transition-all hover:bg-zinc-900 bg-green-600 dark:bg-red-600 rounded-full w-9 aspect-square text-center"></i>
         </span>

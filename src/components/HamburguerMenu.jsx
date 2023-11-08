@@ -8,23 +8,23 @@ const HamburguerMenu = ({ handleMenuSlider, menuSlider }) => {
       }`}
     >
       <div
-        className={`bg-white w-1/4 aspect-square rounded-full group-hover:opacity-0  transition-opacity ${menuRotate}`}
+        className={`bg-slate-950 dark:bg-white w-1/4 aspect-square rounded-full group-hover:opacity-0  transition-all ${menuRotate}`}
       ></div>
-      <div className="bg-white w-1/4 aspect-square rounded-full transition-opacity gro"></div>
+      <div className="bg-slate-950 dark:bg-white w-1/4 aspect-square rounded-full transition-all"></div>
       <div
-        className={`bg-white w-1/4 aspect-square rounded-full group-hover:opacity-0  transition-opacity ${menuRotate}`}
+        className={`bg-slate-950 dark:bg-white w-1/4 aspect-square rounded-full group-hover:opacity-0  transition-all ${menuRotate}`}
       ></div>
-      <div className="bg-white w-1/4 aspect-square rounded-full transition-opacity"></div>
+      <div className="bg-slate-950 dark:bg-white w-1/4 aspect-square rounded-full transition-all"></div>
       <div
-        className={`bg-white w-1/4 aspect-square rounded-full transition-opacity`}
+        className={`bg-slate-950 dark:bg-white w-1/4 aspect-square rounded-full transition-all`}
       ></div>
-      <div className="bg-white w-1/4 aspect-square rounded-full transition-opacity"></div>
+      <div className="bg-slate-950 dark:bg-white w-1/4 aspect-square rounded-full transition-all"></div>
       <div
-        className={`bg-white w-1/4 aspect-square rounded-full group-hover:opacity-0  transition-opacity ${menuRotate}`}
+        className={`bg-slate-950 dark:bg-white w-1/4 aspect-square rounded-full group-hover:opacity-0  transition-all ${menuRotate}`}
       ></div>
-      <div className="bg-white w-1/4 aspect-square rounded-full transition-opacity"></div>
+      <div className="bg-slate-950 dark:bg-white w-1/4 aspect-square rounded-full transition-all"></div>
       <div
-        className={`bg-white w-1/4 aspect-square rounded-full group-hover:opacity-0  transition-opacity ${menuRotate}`}
+        className={`bg-slate-950 dark:bg-white w-1/4 aspect-square rounded-full group-hover:opacity-0  transition-all ${menuRotate}`}
       ></div>
     </div>
   );

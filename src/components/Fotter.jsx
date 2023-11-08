@@ -1,6 +1,6 @@
 const Fotter = ({ handleCloseContactForm, t, language }) => {
   return (
-    <article className="dark:bg-zinc-900 bg-slate-700 p-3 flex flex-col gap-4 min-[500px]:flex-row min-[500px]:justify-around min-[500px]:text-center transition-colors">
+    <article className="dark:bg-zinc-900 bg-slate-950 p-3 flex flex-col gap-4 min-[500px]:flex-row min-[500px]:justify-around min-[500px]:text-center transition-colors text-white">
       <section>
         <h3 className="font-semibold">{t("eng.aboutFooter")}</h3>
         <article className="grid">

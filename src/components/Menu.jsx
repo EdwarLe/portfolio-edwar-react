@@ -10,7 +10,7 @@ const Menu = ({ handleMenuSlider, handleCloseContactForm, menuSlider, t }) => {
       <ul className="flex flex-col justify-center items-center gap-4 h-full font-bold text-2xl">
         <li onClick={handleMenuSlider}>
           <a
-            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-white dark:hover:border-b-white transition-all"
+            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-slate-950 dark:hover:border-b-white transition-all"
             href="#home"
           >
             {t("eng.home")}
@@ -18,7 +18,7 @@ const Menu = ({ handleMenuSlider, handleCloseContactForm, menuSlider, t }) => {
         </li>
         <li onClick={handleMenuSlider}>
           <a
-            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-white dark:hover:border-b-white transition-all"
+            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-slate-950 dark:hover:border-b-white transition-all"
             href="#skills"
           >
             {t("eng.skills")}
@@ -26,7 +26,7 @@ const Menu = ({ handleMenuSlider, handleCloseContactForm, menuSlider, t }) => {
         </li>
         <li onClick={handleMenuSlider}>
           <a
-            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-white dark:hover:border-b-white transition-all"
+            className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-slate-950 dark:hover:border-b-white transition-all"
             href="#projects"
           >
             {t("eng.projects")}
@@ -38,7 +38,7 @@ const Menu = ({ handleMenuSlider, handleCloseContactForm, menuSlider, t }) => {
             handleMenuSlider();
           }}
         >
-          <button className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-white dark:hover:border-b-white transition-all">
+          <button className="hover:text-green-600 dark:hover:text-red-600 border-b-2 border-b-transparent hover:border-b-slate-950 dark:hover:border-b-white transition-all">
             {t("eng.contact")}
           </button>
         </li>

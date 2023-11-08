@@ -5,6 +5,7 @@ import MainPage from "./components/MainPage";
 import Menu from "./components/Menu";
 import Social from "./components/Social";
 import { useTranslation } from "react-i18next";
+import WhatsAppBtn from "./components/WhatsAppBtn";
 
 function App() {
   const [menuSlider, setMenuSlider] = useState(false);
@@ -49,8 +50,9 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <main className="bg-[url(/bgPortfolio.webp)] bg-cover bg-fixed bg-center min-h-screen w-full  font-montserrat text-white overflow-hidden relative">
-      <div className="bg-slate-950/90 dark:bg-black/80 transition-colors">
+    <main className="bg-[url(/bgPortfolio.webp)] bg-cover bg-fixed bg-center min-h-screen w-full  font-montserrat text-slate-950 dark:text-white overflow-hidden relative">
+      <div className="bg-gray-400/80 dark:bg-black/80 transition-colors">
+        <WhatsAppBtn />
         <section className="bg-transparent fixed w-full h-[140px] backdrop-blur-xl z-50 min-[500px]:h-[88px] py-2">
           <Header
             setMenuSlider={setMenuSlider}
@@ -82,7 +84,7 @@ function App() {
         </section>
         <div
           onClick={handleBtnOnTop}
-          className="fixed bottom-4 right-4 text-3xl cursor-pointer bg-white dark:bg-zinc-900 flex justify-center items-center rounded-full hover:scale-110 transition-all"
+          className="fixed bottom-4 right-4 text-3xl cursor-pointer bg-slate-950 dark:bg-zinc-900 flex justify-center items-center rounded-full hover:scale-110 transition-all"
         >
           <i className="bx bxs-caret-up-circle text-green-600 dark:text-red-600"></i>
         </div>
