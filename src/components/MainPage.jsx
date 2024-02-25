@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ContactMe from "./ContactMe";
 import Fotter from "./Fotter";
 import Home from "./Home";

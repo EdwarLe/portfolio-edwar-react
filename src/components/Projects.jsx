@@ -7,6 +7,20 @@ const Projects = ({ t }) => {
         {t("eng.titleProjects")}
       </h2>
       <section className="min-h-screen p-3 grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-4 mb-8">
+        <ProjectUnit 
+        title={'Kaba Clubs E-commerce'}
+        img={'bg-[url(/ecommerceKabaClubs.png)]'}
+        info={'E-commerce for Kaba Clubs, where customers can make purchases of products curated by affiliated vendors of the Club.'}
+        skill1={<i className="bx bxl-typescript"></i>}
+        skill2={<i className="bx bxl-html5"></i>}
+        skill3={<i className="bx bxl-css3"></i>}
+        skill4={<i className="bx bxl-react"></i>}
+        skill5={<i className="bx bxl-tailwind-css"></i>}
+        skill6={''}/>
+        
+        
+        
+        
         <ProjectUnit
           title={"Pokedex"}
           img={"bg-[url(/pokedexApi.jpg)]"}
