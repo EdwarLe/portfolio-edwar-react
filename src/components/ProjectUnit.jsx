@@ -13,17 +13,6 @@ const ProjectUnit = ({
   skill5,
   skill6,
 }) => {
-  const [isGithub, setIsGithub] = useState((nowgitHub) => {
-    if(nowgitHub === true) {
-      setIsGithub('el valor es true')
-    }
-    if(nowgitHub === false) {
-      setIsGithub('el valor es false')
-    }
-  })
-  
-  setIsGithub(false)
-  console.log(isGithub)
   return (
     <article className="bg-slate-950 dark:bg-zinc-900 grid place-items-center gap-4 p-2 transition-colors text-white">
       <h3 className="uppercase font-semibold">{title}</h3>
