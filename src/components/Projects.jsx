@@ -17,10 +17,7 @@ const Projects = ({ t }) => {
         skill4={<i className="bx bxl-react"></i>}
         skill5={<i className="bx bxl-tailwind-css"></i>}
         skill6={''}/>
-        
-        
-        
-        
+      
         <ProjectUnit
           title={"Pokedex"}
           img={"bg-[url(/pokedexApi.jpg)]"}
