@@ -24,7 +24,7 @@ const Home = ({ handleCloseContactForm, t, language }) => {
           </button>
           <a
             className="bg-slate-950 font-semibold p-2 px-4 hover:bg-green-600 hover:text-slate-950 hover:scale-105 transition-all dark:bg-red-600 flex items-center"
-            href={language?.language === "es" ? "/CV Edwar León 2024.pdf" : "/EV CV Edwar León 2024.pdf"} download>
+            href={language?.language === "es" ? "/CV-edwar_leon-2024-UP.pdf" : "/CV-edwar_leon-2024-UP-EV.pdf"} download>
             {t("eng.cv")}
           </a>
         </section>
